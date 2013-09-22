@@ -1,0 +1,10 @@
+ <script>//javascript smooth scrolling
+	$(document).ready(function() {
+	$("#nav ul li a[href^='#']").on('click', function(e) {
+   e.preventDefault();
+   $('html, body').animate({ scrollTop: $(this.hash).offset().top }, 1000);
+
+   // edit: Opera and IE requires the "html" elm. animated
+});
+ });//end ready
+ </script>
